@@ -1,8 +1,6 @@
-FROM petebids/3270:v1
+FROM base3270:latest
 
 ADD app.py /
 
-RUN pip3 install setuptools
-RUN pip3 install py3270 
 
 CMD ["python3", "app.py"]
